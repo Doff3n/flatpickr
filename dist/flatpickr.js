@@ -673,7 +673,7 @@ function FlatpickrInstance(element, config) {
 
 		self.hourElement.tabIndex = self.minuteElement.tabIndex = -1;
 
-		self.hourElement.value = self.pad(self.latestSelectedDateObj ? self.latestSelectedDateObj.getHours() : self.config.defaultHour % (self.time_24hr ? 24 : 12));
+		self.hourElement.value = self.pad(self.latestSelectedDateObj ? self.latestSelectedDateObj.getHours() : self.config.defaultHour % (self.config.time_24hr ? 24 : 12));
 
 		self.minuteElement.value = self.pad(self.latestSelectedDateObj ? self.latestSelectedDateObj.getMinutes() : self.config.defaultMinute);
 
